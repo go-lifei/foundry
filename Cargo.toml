@@ -174,7 +174,7 @@ hyper = "0.14"
 tower = "0.4"
 tower-http = "0.4"
 
-#[patch."https://github.com/gakonst/ethers-rs"]
+#[patch."https://github.com/go-lifei/ethers-rs"]
 #ethers = { path = "../ethers-rs/ethers" }
 #ethers-addressbook = { path = "../ethers-rs/ethers-addressbook" }
 #ethers-contract = { path = "../ethers-rs/ethers-contract" }
@@ -187,14 +187,14 @@ tower-http = "0.4"
 #ethers-solc = { path = "../ethers-rs/ethers-solc" }
 
 [patch.crates-io]
-ethers = { git = "https://github.com/gakonst/ethers-rs", rev = "f0e5b194f09c533feb10d1a686ddb9e5946ec107" }
-ethers-core = { git = "https://github.com/gakonst/ethers-rs", rev = "f0e5b194f09c533feb10d1a686ddb9e5946ec107" }
-ethers-contract = { git = "https://github.com/gakonst/ethers-rs", rev = "f0e5b194f09c533feb10d1a686ddb9e5946ec107" }
-ethers-contract-abigen = { git = "https://github.com/gakonst/ethers-rs", rev = "f0e5b194f09c533feb10d1a686ddb9e5946ec107" }
-ethers-providers = { git = "https://github.com/gakonst/ethers-rs", rev = "f0e5b194f09c533feb10d1a686ddb9e5946ec107" }
-ethers-signers = { git = "https://github.com/gakonst/ethers-rs", rev = "f0e5b194f09c533feb10d1a686ddb9e5946ec107" }
-ethers-middleware = { git = "https://github.com/gakonst/ethers-rs", rev = "f0e5b194f09c533feb10d1a686ddb9e5946ec107" }
-ethers-solc = { git = "https://github.com/gakonst/ethers-rs", rev = "f0e5b194f09c533feb10d1a686ddb9e5946ec107" }
+ethers = { git = "https://github.com/go-lifei/ethers-rs", rev = "6fe0bb03e14f0ab8f3dfec84b9bfd00c65766fef" }
+ethers-core = { git = "https://github.com/go-lifei/ethers-rs", rev = "6fe0bb03e14f0ab8f3dfec84b9bfd00c65766fef" }
+ethers-contract = { git = "https://github.com/go-lifei/ethers-rs", rev = "6fe0bb03e14f0ab8f3dfec84b9bfd00c65766fef" }
+ethers-contract-abigen = { git = "https://github.com/go-lifei/ethers-rs", rev = "6fe0bb03e14f0ab8f3dfec84b9bfd00c65766fef" }
+ethers-providers = { git = "https://github.com/go-lifei/ethers-rs", rev = "6fe0bb03e14f0ab8f3dfec84b9bfd00c65766fef" }
+ethers-signers = { git = "https://github.com/go-lifei/ethers-rs", rev = "6fe0bb03e14f0ab8f3dfec84b9bfd00c65766fef" }
+ethers-middleware = { git = "https://github.com/go-lifei/ethers-rs", rev = "6fe0bb03e14f0ab8f3dfec84b9bfd00c65766fef" }
+ethers-solc = { git = "https://github.com/go-lifei/ethers-rs", rev = "6fe0bb03e14f0ab8f3dfec84b9bfd00c65766fef" }
 
 revm = { git = "https://github.com/bluealloy/revm", branch = "reth_freeze" }
 revm-interpreter = { git = "https://github.com/bluealloy/revm", branch = "reth_freeze" }

@@ -5,7 +5,7 @@ use anvil_core::types::Forking;
 use ethers::{
     prelude::Middleware,
     providers::{JsonRpcClient, PubsubClient},
-    types::{Block, H256},
+    types::{Block, Transaction,H256},
 };
 use std::{fmt, future::Future};
 use tokio::{runtime::Handle, task::JoinHandle};
@@ -141,7 +141,7 @@ impl TaskManager {
     where
         P: Middleware + Unpin + 'static,
         <P as Middleware>::Provider: PubsubClient,
-        F: Fn(Block<H256>) -> Fut + Unpin + Send + Sync + 'static,
+        F: Fn(Block<Transaction>) -> Fut + Unpin + Send + Sync + 'static,
         Fut: Future<Output = ()> + Send,
     {
         let shutdown = self.on_shutdown.clone();

@@ -15,8 +15,8 @@ foundry-compilers.workspace = true
 foundry-config.workspace = true
 
 ethers-core.workspace = true
-ethers-middleware.workspace = true
-ethers-providers = { workspace = true, features = ["ws", "ipc"] }
+ethers-middleware = { workspace = true, features = ["filecoin"] }
+ethers-providers = { workspace = true, features = ["filecoin","ws", "ipc"] }
 
 alloy-dyn-abi = { workspace = true, features = ["arbitrary", "eip712"] }
 alloy-json-abi.workspace = true
